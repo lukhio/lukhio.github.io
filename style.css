@@ -226,3 +226,8 @@ ul.task-list li input[type="checkbox"] {
     font-size: 90%;
     padding-top: 0.3em;
 }
+
+#contact {
+    padding: 0.5em 0 0 1em;
+    width: fit-content;
+}
