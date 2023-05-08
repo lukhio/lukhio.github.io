@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <title>Error 404: Not Found</title>
+        <style type="text/css">
+            html {
+                background-color: #000000;
+                color: #ffffff;
+                text-align: center;
+                font-family: monospace;
+                font-size: x-large;
+                line-height: 150%;
+            }
+
+            body {
+                margin: 0 auto;
+                display: table;
+            }
+
+            html, body {
+                height: 100%;
+            }
+
+            #container {
+                display: table-cell;
+                vertical-align: middle;
+            }
+        </style>
+        <script>
+            const haikus = [
+                "The page that you seek<br>Lies beyond our perception<br>But others await",
+                "You step in the stream<br>But the water has moved on<br>This page is not here",
+                "Not a pretty sight<br>When the web dies screaming loud<br>The site is not found",
+                "Morning and sorrow<br>404 with us now<br>Lost to paradise",
+                "To have no errors<br>Would be life without meaning<br>No struggle, no joy",
+                "Emptyness of soul<br>Forever aching blackness<br>This page is not here",
+                "Rather than a beep<br>Or a rude error message,<br>These words: 'Site not found'",
+                "Site slips through fingers<br>Pulse pounding hard and frantic<br>Vanishing like mist",
+                "The dream is shattered<br>The web site cannot be found<br>Inside the spring rain",
+                "The Web site you seek<br>Cannot be located, but<br>Countless more exist",
+                "With searching comes loss<br>and the presence of absence:<br>This page is not here",
+            ];
+
+            window.onload = function() {
+                const idx = Math.floor(Math.random() * haikus.length);
+                const haiku = haikus[idx];
+                document.getElementById('container').innerHTML = haiku;
+            }
+        </script>
+    </head>
+    <body>
+        <div id="container"></div>
+    </body>
+</html>
